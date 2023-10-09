@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_color"
+    android:orientation="vertical"
+    android:padding="12dp"
+    tools:context=".ToAddList">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        >
+        <TextView
+            android:id="@+id/firstText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Task Name"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:fontFamily="monospace"
+            android:textColor="@color/white"
+            />
+
+        <EditText
+            android:id="@+id/toDoName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/backgroundone"
+            android:padding="10dp"
+            android:backgroundTint="#625B6E"
+            android:layout_marginTop="6dp"
+            android:hint="Enter Task Name"
+            />
+
+
+    </LinearLayout>
+
+<!--    to add spaces-->
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/secondText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Task Description"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:fontFamily="monospace"
+            android:textStyle="bold"
+            />
+
+        <EditText
+            android:id="@+id/toDoDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:hint="Enter Task Description"
+            android:background="@drawable/backgroundone"
+            android:backgroundTint="#625B6E"
+            android:padding="10dp"
+            />
+
+    </LinearLayout>
+
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/thirdText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pick Date &amp; Time"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:fontFamily="monospace"
+            />
+
+        <Button
+            android:id="@+id/dateTimeBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:text="Pick Date &amp; Time"
+            android:background="@drawable/backgroundone"
+            android:backgroundTint="#301C1C"
+            android:padding="16dp"
+            android:fontFamily="@font/basic"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/doneBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Done"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/backgroundone"
+        android:backgroundTint="@color/purple_500"
+        android:textColor="@color/white"
+        android:fontFamily="@font/basic"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        />
+
+</LinearLayout>
